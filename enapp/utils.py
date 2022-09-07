@@ -4,7 +4,7 @@ from django.core.mail import EmailMessage
 from django.template.loader import get_template
 
 
-from datetime import datetime, timedelta
+from datetime import timedelta
 from uuid import uuid4
 from django.contrib.auth import get_user_model
 
