@@ -49,7 +49,6 @@ class ObtainAuthTokenView(APIView):
 
     def post(self, request):
         context = {}
-        # print(request.data)
 
         email = request.data.get("email")
         password = request.data.get("password")
