@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=1336"> -->
+    <title>{% block title %} {% endblock title %}</title>
+    <!-- Favicon Icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/home/img/favicon.png"
+    />
+    <!-- All STYLESHEET CSS -->
+    <link rel="stylesheet" href="/assets/home/css/element.css" />
+    <link rel="stylesheet" href="/assets/home/css/style.css" />
+    <link rel="stylesheet" href="/assets/home/css/responsive.css" />
+    <!-- link modernizr js -->
+    <script src="/assets/home/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    {% block styles %}{% endblock styles %}
+  </head>
+
+  <body>
+    <!-- Start Preloader -->
+    <!--preloader start-->
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <div class="preloader-img">
+          <img src="/assets/home/img/preloader.png" alt="Preloader Image" />
+        </div>
+      </div>
+    </div>
+    <!--preloader end-->
+    <!-- End Preloader -->
+    <!-- Start Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Start Header Section -->
+      <header>
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-9">
+                <div class="header-top-left">
+                  <ul class="info">
+                    <li>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      admin@earneasypay.com
+                    </li>
+                    <li><div id="google_translate_element" style=""></div></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="header-top-right">
+                  <ul class="info-login">
+                    <li>
+                      <a href="http://localhost:5173/login/"
+                        ><i class="fa fa-user" aria-hidden="true"></i> login</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://localhost:5173/register/"
+                        ><i class="fa fa-sign-in" aria-hidden="true"></i> Sign
+                        Up</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-area header-style-multipage stricky">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 bg-primaryj">
+                <div class="logo">
+                  <a href="/">
+                    <img src="/assets/home/img/logo.png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="col-md-8 col-sm-8 main-menu-wrapper">
+                <div class="multipage-wrapper">
+                  <ul class="main-menu">
+                    <li class=""><a href="/">Home </a></li>
+                    <li>
+                      <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'packages' %}">Packages</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'timeline' %}">Timeline</a>
+                    </li>
+                    <!-- <li class="static">
+                      <a href="http://localhost:5173/login/">Login/Join</a>
+                    </li> -->
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+                  <div class="search-option">
+                    <ul>
+                      <li>
+                        <a href="#" class="search-button"
+                          ><i class="fa fa-search"></i
+                        ></a>
+                        <ul>
+                          <li>
+                            <input
+                              class="form-control"
+                              name="name"
+                              type="text"
+                              placeholder="SEARCH"
+                              required
+                            />
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-menu-area">
+                <div class="mobile-menu">
+                  <ul class="main-menu">
+                    <li class="active">
+                      <a href="/">Home <i class="fa fa-angle-down"></i></a>
+                    </li>
+                    <li>
+                      <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'packages' %}">Packages</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'timeline' %}">Timeline</a>
+                    </li>
+                    <li class="static">
+                      <a href="http://localhost:5173/login/">Login/Join</a>
+                    </li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header Section -->
+
+      <!-- Start Slider Area -->
+      {% block banner %} {% endblock banner %}
+      <!-- End Slider Area -->
+      <!-- Start Main Content Wrapper -->
+      {% block content %} {% endblock content %}
+      <!--  Main Content Wrapper ends -->
+
+      <!-- Start Footer Section -->
+      <div class="clearfix"></div>
+      <footer>
+        <div class="footer-widget-area ptb-100 footer-weve">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-widget-item">
+                  <div class="logo footer-logo">
+                    <a href="#"
+                      ><img src="/assets/home/img/logo.png" alt=""
+                    /></a>
+                  </div>
+                  <p>
+                    EarnEasypay.com is an advanced investment platform based in
+                    Birmingham, UK. It was established February 2018. We are
+                    strictly into bitcoin mining and investment
+                  </p>
+                  <ul class="widget-address">
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-map-marker m-5"></i> 130 Boroughbridge
+                        Road, Birmingham, B4 3BW, UK</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-envelope m-5"></i>
+                        admin@EarnEasypay.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-widget-item">
+                  <h4>QUICK LINKS</h4>
+                  <ul class="widget-link">
+                    <li>
+                      <a href="/">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'about' %}"
+                        ><i
+                          class="fa fa-long-arrow-right"
+                          aria-hidden="true"
+                        ></i
+                        >About us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'packages' %}"
+                        ><i
+                          class="fa fa-long-arrow-right"
+                          aria-hidden="true"
+                        ></i
+                        >Packages</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'timeline' %}"
+                        ><i
+                          class="fa fa-long-arrow-right"
+                          aria-hidden="true"
+                        ></i
+                        >Our Timeline</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://localhost:5173/login/"
+                        ><i
+                          class="fa fa-long-arrow-right"
+                          aria-hidden="true"
+                        ></i
+                        >Member's Area</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'contact' %}"
+                        ><i
+                          class="fa fa-long-arrow-right"
+                          aria-hidden="true"
+                        ></i
+                        >Contact us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{% url 'contact' %}"
+                        ><i
+                          class="fa fa-long-arrow-right"
+                          aria-hidden="true"
+                        ></i
+                        >Contact Admin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-widget-item">
+                  <h4>Core Features</h4>
+                  <div class="widget-post">
+                    <div class="widget-post-thumb">
+                      <img src="/assets/home/img/blog/thumb.jpg" alt="thumb" />
+                    </div>
+                    <div class="widget-post-content">
+                      <div class="widget-date">STEADY WITHDRAWAL.</div>
+                      <a href="#"><h4>You get paid quick and steady</h4></a>
+                    </div>
+                  </div>
+                  <div class="widget-post">
+                    <div class="widget-post-thumb">
+                      <img
+                        src="/assets/home/img/blog/thumb-1.jpg"
+                        alt="thumb"
+                      />
+                    </div>
+                    <div class="widget-post-content">
+                      <div class="widget-date">MULTIPLE COIN OPTIONS</div>
+                      <a href="#"><h4>Up to 10 coin available</h4></a>
+                    </div>
+                  </div>
+                  <div class="widget-post">
+                    <div class="widget-post-thumb">
+                      <img
+                        src="/assets/home/img/blog/thumb-2.jpg"
+                        alt="thumb"
+                      />
+                    </div>
+                    <div class="widget-post-content">
+                      <div class="widget-date">MAXIMUM PROFIT</div>
+                      <a href="#"
+                        ><h4>You get maximum return on investment</h4></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-widget-item">
+                  <h4>NEWSLETTER SIGNUP</h4>
+                  <div class="form-subscribe">
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="Subscribe Now"
+                    />
+                    <a class="submit" href="#"
+                      ><i class="fa fa-paper-plane" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <h4>Footer Social</h4>
+                  <ul class="social-bookmarkas">
+                    <li>
+                      <a href="#"><i class="ti-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ti-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ti-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ti-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ti-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <div class="container">
+            <div class="row">
+              <div class="copyright">
+                <p>
+                  Copyright 2022 &copy; <a href="#">EarnEasypay.com</a>. All
+                  Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end Footer Section -->
+      <!-- End Main Content Wrapper -->
+    </div>
+    <!-- End Main Wrapper -->
+    <!-- ALL JQUERY  -->
+    <script src="/assets/home/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="/assets/home/js/plugins.js"></script>
+    <script src="/assets/home/js/main.js"></script>
+  </body>
+</html>

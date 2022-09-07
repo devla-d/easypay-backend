@@ -1,0 +1,131 @@
+{% extends "home/layout.html" %}
+<!--title-->
+{% block title %} Contact Us - Earneasypay {% endblock title %}
+<!--baner-->
+{% block banner%}
+
+<!-- Start Banner Area -->
+<div class="banner-area banner-bg-3 ptb-120 bg-opacity-black-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="banner">
+          <h2>Contact Us</h2>
+          <ul class="page-title-link">
+            <li><a href="indexbc14.html?a=home">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Banner Area -->
+{% endblock banner %} {% block content %}
+
+<!-- Start Main Content Wrapper -->
+<div class="main-content-wrapper">
+  <!-- start contact section -->
+  <div id="contact" class="content-section-area ptb-120 gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+          <div class="main-heading-content text-center">
+            <h2>get in <span>touch</span></h2>
+            <p>
+              For your questions and data verification and confirmation of
+              transactions do not hesitate to contact our support team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container clearfix">
+      <div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-sm-10">
+        <div class="contact-form-wrapper">
+          <div class="contact-form">
+            <form method="post" name="mainform">
+              <input
+                type="hidden"
+                name="form_id"
+                value="16614416461252"
+              /><input
+                type="hidden"
+                name="form_token"
+                value="ba927d932651a42ac86525f38ef57e48"
+              />
+              <input type="hidden" name="a" value="support" />
+              <input type="hidden" name="action" value="send" />
+
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Your Name*"
+                required
+              />
+              <input
+                class="form-control"
+                name="email"
+                value=""
+                type="email"
+                placeholder="Email Address*"
+                required
+              />
+
+              <textarea
+                name="message"
+                cols="30"
+                rows="2"
+                placeholder="Write Message*"
+              ></textarea>
+
+              <button
+                class="button button-fullwidth form-btn"
+                type="submit"
+                disabled
+              >
+                Use The Live support
+              </button>
+              <p class="zpro-send-message"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end contact section -->
+  <!-- Start Address section -->
+  <div class="content-section-area pb-80 gray-bg text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-sm-10 col-md-10 col-sm-offset-1">
+          <div class="address-item">
+            <div class="address-icon">
+              <i class="ti-location-pin"></i>
+            </div>
+            <h3>Headquarters</h3>
+            <p>130 Boroughbridge Road, Birmingham, B4 3BW, UK</p>
+          </div>
+          <div class="address-item">
+            <div class="address-icon">
+              <i class="ti-email"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>admin@EarnEasypay.com <br /><!--admin@EarnEasypay.com--></p>
+          </div>
+          <div class="address-item">
+            <div class="address-icon">
+              <i class="ti-timer"></i>
+            </div>
+            <h3>Working Hours</h3>
+            <p>(Mon-Fri 8:00am - 8:00pm) <br />(Sat 8:00am - 12:00pm)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Address section -->
+</div>
+{% endblock content %}

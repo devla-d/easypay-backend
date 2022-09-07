@@ -1,0 +1,175 @@
+{% extends "home/layout.html" %}
+<!--title-->
+{% block title %} Our timeline {% endblock title %} {% block styles %}
+
+<style>
+  .timeline {
+    width: 80%;
+    margin: auto;
+  }
+
+  .timelinep {
+    color: #666;
+    border-top: 2px dashed;
+    border-color: #e9d16f !important;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .timelinep:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px;
+    padding-right: 0;
+  }
+
+  .timelinep:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px;
+    padding-left: 0;
+  }
+
+  .timelinep:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .timelinep:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+</style>
+{% endblock styles %} {% block banner %}
+<!-- Start Banner Area -->
+<div class="banner-area banner-bg-1 ptb-100 bg-opacity-black-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="banner">
+          <h2>Our Timeline</h2>
+          <ul class="page-title-link">
+            <li><a href="index-2.html">Home</a></li>
+            <li><a href="#">Timeline</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Banner Area -->
+{% endblock banner %} {% block content %}
+<!-- Start Main Content Wrapper -->
+<div class="main-content-wrapper">
+  <!-- Start Pricing Table -->
+  <div id="price" class="content-section-area ptb-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+          <div class="main-heading-content text-center">
+            <h2>Our <span>Timeline</span></h2>
+            <p>
+              EarnEasypay.com has come a long way in the cryptocurrency
+              ecosystem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="timeline">
+            <p class="timelinep">
+              LAUNCH OF EarnEasypay.com -
+              <span class="color-text">26 February 2018</span>
+            </p>
+            <p class="timelinep">
+              BTC SUPPORT ADDED -
+              <span class="color-text">19th March 2018</span>
+            </p>
+            <p class="timelinep">
+              Investment Area Launched -
+              <span class="color-text">22nd June 2018</span>
+            </p>
+            <p class="timelinep">
+              New Functionalities Added -
+              <span class="color-text">December 2018</span>
+            </p>
+            <p class="timelinep">
+              Multi Language Capability -
+              <span class="color-text">Jan 2019</span>
+            </p>
+            <p class="timelinep">
+              Website Launched -
+              <span class="color-text">October 2019</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Pricing Table -->
+  <!-- Start Client Section -->
+  <div class="content-section-area ptb-80 gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="client-wrapper">
+          <div class="col-md-2">
+            <div class="clirnt-item">
+              <a href="#"
+                ><img src="/assets/home/img/client/logo2.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="clirnt-item">
+              <a href="#"
+                ><img src="/assets/home/img/client/logo3.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="clirnt-item">
+              <a href="#"
+                ><img src="/assets/home/img/client/logo6.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="clirnt-item">
+              <a href="#"
+                ><img src="/assets/home/img/client/logo2.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="clirnt-item">
+              <a href="#"
+                ><img src="/assets/home/img/client/logo3.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="clirnt-item">
+              <a href="#"
+                ><img src="/assets/home/img/client/logo6.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="clirnt-item">
+              <a href="#"
+                ><img src="/assets/home/img/client/logo2.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end Client Section -->
+</div>
+<!-- Start Footer Section -->
+{% endblock content %}
