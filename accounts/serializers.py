@@ -27,18 +27,18 @@ class RegisterSerializer(serializers.ModelSerializer):
             "full_name",
             "username",
             "email",
-            "phone",
-            "btc_id",
-            "usdt_id",
-            "perfect_money_id",
+            # "phone",
+            # "btc_id",
+            # "usdt_id",
+            # "perfect_money_id",
             "password",
             "ref_code",
         ]
 
         extra_kwargs = {
-            "btc_id": {"required": False},
-            "usdt_id": {"required": False},
-            "perfect_money_id": {"required": False},
+            # "btc_id": {"required": False},
+            # "usdt_id": {"required": False},
+            # "perfect_money_id": {"required": False},
             "username": {"required": False},
         }
 
@@ -48,10 +48,10 @@ class RegisterSerializer(serializers.ModelSerializer):
             full_name=self.validated_data["full_name"],
             username=utils.user_unique_id(),
             email=self.validated_data["email"],
-            phone=self.validated_data["phone"],
-            btc_id=self.validated_data["btc_id"],
-            usdt_id=self.validated_data["usdt_id"],
-            perfect_money_id=self.validated_data["perfect_money_id"],
+            # phone=self.validated_data["phone"],
+            # btc_id=self.validated_data["btc_id"],
+            # usdt_id=self.validated_data["usdt_id"],
+            # perfect_money_id=self.validated_data["perfect_money_id"],
         )
         password = self.validated_data["password"]
         account.set_password(password)
