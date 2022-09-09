@@ -15,7 +15,8 @@ class RegisterSerializer(serializers.ModelSerializer):
     )
 
     password = serializers.CharField(
-        write_only=True, required=True, validators=[validate_password]
+        write_only=True,
+        required=True,  # validators=[validate_password]
     )
 
     ref_code = serializers.CharField(required=False)
