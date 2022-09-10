@@ -69,7 +69,9 @@ def create_investment(request):
             user.deposit_balance -= amount
             user.save()
             investment.save()
-            context["success"] = "Your investment Has been Activated"
+            serializer = InvestmentSerializer(investment)
+            context["msg"] = "Your investment Has been Activated"
+            context["investment"] = serializer.data
             return Response(context)
 
     else:
