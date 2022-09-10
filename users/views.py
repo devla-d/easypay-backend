@@ -108,14 +108,14 @@ class WithdrawApiview(APIView):
 
         amount = int(request.data.get("amount"))
         serializer = ProfileSerializer(user)
-        if paymethod == "Perfect money" and user.perfect_money_id == None:
+        if paymethod == "Perfect money" and utils.check_perfect_money_id(user) == None:
             return Response({"error": "Please add your perfect money in settings"})
 
-        if paymethod == "Bitcoin" and user.btc_id == None:
+        if paymethod == "Bitcoin" and utils.check_btc_id(user) == None:
             print("No res")
             return Response({"error": "Please add your bitcoin wallet in settings"})
 
-        if paymethod == "USDT" and user.usdt_id == None:
+        if paymethod == "USDT" and utils.check_usdt_id(user) == None:
             return Response({"error": "Please add your Usdt wallet in settings"})
 
         if user.balance >= amount:

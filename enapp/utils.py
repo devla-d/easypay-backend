@@ -53,6 +53,24 @@ def validate_username(username):
         return username
 
 
+def check_perfect_money_id(user):
+    if user.perfect_money_id == "" or user.perfect_money_id == None:
+        return None
+    return True
+
+
+def check_btc_id(user):
+    if user.btc_id == "" or user.btc_id == None:
+        return None
+    return True
+
+
+def check_usdt_id(user):
+    if user.usdt_id == "" or user.usdt_id == None:
+        return None
+    return True
+
+
 def user_unique_id():
     code = str(uuid4()).replace(" ", "").upper()[:7]
     return code
